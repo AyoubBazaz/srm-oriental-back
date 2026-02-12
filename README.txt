@@ -25,3 +25,9 @@
    - افتح المتصفح:
      http://localhost:5173
    - سجّل الدخول حسب الدور (admin أو technician أو client).
+
+6️⃣ Vérification téléphone (SMS + WhatsApp via Twilio):
+   - Créez le fichier config/twilio_config.php à partir de config/twilio_config.example.php
+   - Renseignez account_sid, auth_token, from_sms (numéro Twilio), from_whatsapp (ex: whatsapp:+14155238886 pour le sandbox)
+   - Assurez-vous que la table contracts a les colonnes verification_code et verified (voir sql/contracts_verification_columns.sql)
+   - À la création d'un client, le code est envoyé par SMS et WhatsApp via Twilio.

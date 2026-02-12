@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
+$host = "127.0.0.1";
 $dbname = "react_contracts_db"; // ← اسم قاعدة البيانات
 $username = "root";
-$password = "";
+$password = "Ayoub@123";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
